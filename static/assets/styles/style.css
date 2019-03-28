@@ -4052,7 +4052,6 @@ section.section-skewed.section-bordered #home-slider:after {
 }
 .icon-box > .animated-icon {
   width: 55px;
-  height: 55px;
   margin-bottom: 25px;
 }
 .icon-box > i {
@@ -7831,9 +7830,10 @@ img.zoom-img {
 .preview-icon:hover i {
   color: #00c3da;
 }
-.hero-btn a {
-  color: #fff!important;
-  border-color: #fff!important;
+svg {
+  height: 55px;
+  width: 55px;
 }
-.hero-btn a:hover {
+.carousel {
+  height: 50px;
 }

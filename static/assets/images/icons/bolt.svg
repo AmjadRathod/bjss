@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" data-ember-extension="1" data-lt-installed="true" stroke="url(#grad-60dbb3c8-e022-bf14)">
+  <linearGradient id="grad-60dbb3c8-e022-bf14" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ff795f"/>
+    <stop offset="100" stop-color="#ce1768"/>
+  </linearGradient>
+  <path fill="none" stroke="url(#grad-60dbb3c8-e022-bf14)" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M40 1L17 37 31 37 24 63 50 27 36 27Z" style="stroke-dasharray:169, 171;stroke-dashoffset:0"/>
+</svg>
