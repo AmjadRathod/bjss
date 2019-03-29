@@ -1,17 +1,12 @@
 
-{{- $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify -}}
+{{- $style := resources.Get "styles/main.scss" | resources.ToCSS -}}
+<!-- {{- $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify -}} -->
 <head>
   <title>Demo</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="shortcut icon" href="images/favicon.png">
-  <link rel="stylesheet" href="/assets/styles/bundle.css">
-  <link rel="stylesheet" href="/assets/styles/hody-icons.css">
-  <link rel="stylesheet" href="/assets/styles/style.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Source+Sans+Pro:300,400|Kaushan+Script|Lora|Playfair+Display:700"
-    rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{ $style.Permalink }}" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="{{ $style.Permalink }}" media="screen">
 
 </head>

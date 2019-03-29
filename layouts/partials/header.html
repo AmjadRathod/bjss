@@ -1,54 +1,38 @@
 {{- $avatar := resources.Get (.Site.Params.avatar | default "images/logo.png") -}}
 
-<nav id="navbar" class="stick">
-  <div class="navbar-wrapper">
-    <div class="container">
-      <div class="logo">
-        <a href="{{ .Site.Home.URL }}">
-          <img class="logo-light" src="{{ $avatar.RelPermalink }}" alt="{{ .Site.Title }}">
-          <img class="logo-dark" src="{{ $avatar.RelPermalink }}" alt="{{ .Site.Title }}">
-        </a>
-      </div>
-      <div class="menu-extras">
-        <div class="menu-item">
-          <div class="nav-toggle">
-            <a class="menu-toggle" href="">
-              <div class="hamburger">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div id="navigation">
-        <ul class="navigation-menu nav">
-          <li class="menu-item-has-children has-megamenu">
-            <a href="#">Expertise</a>
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">Services</a>
-          </li>
-          <li class="menu-item-has-children"><a
-              href="#">Solutions</a>
-            
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">Industries</a>
-          </li>
-          <li class="menu-item-has-children has-megamenu last-elements">
-            <a href="#">Success Stories</a>
-          </li>
-          <li class="menu-item-has-children last-elements"><a
-              href="#">Technologies</a>
-          </li>
-          <li class="menu-item-has-children last-elements"><a
-              href="#">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
+<div class="navik-header header-transparent header-shadow viewport-lg sticky" style="margin-top: 0px;">
+  <div class="container">
 
+    <!-- Navik header -->
+    <div class="navik-header-container">
+
+      <!--Logo-->
+      <div class="logo" data-mobile-logo="{{ $avatar.RelPermalink }}" data-sticky-logo="{{ $avatar.RelPermalink }}">
+        <a href="{{ .Site.Home.URL }}"><img src="{{ $avatar.RelPermalink }}" alt="logo"></a>
+      </div>
+
+      <!-- Burger menu -->
+      <div class="burger-menu">
+        <div class="line-menu line-half first-line"></div>
+        <div class="line-menu"></div>
+        <div class="line-menu line-half last-line"></div>
+      </div>
+
+      <!--Navigation menu-->
+      <nav class="navik-menu menu-caret submenu-top-border submenu-scale">
+        <ul>
+          <li class="current-menu"><a href="#">Expertise</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#">Success Stories</a></li>
+          <li><a href="#">Technologies</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+  <div class="header-shadow-wrapper"></div>
+</div>

@@ -1,0 +1,29 @@
+.footer {
+  padding: 50px 0;
+  background: $white;
+  color: $footer-color;
+
+  .menu {
+    margin-top: 50px;
+    
+    ul {
+      padding: 0;
+
+      .item {
+        list-style-type: none;
+        color: $footer-color;
+  
+        a {
+          color: $footer-color;
+          text-decoration: none;
+          transition: all .5s;
+  
+          &:hover {
+            color: $light-blue;
+  
+          }
+        }
+      }
+    }
+  }  
+}
