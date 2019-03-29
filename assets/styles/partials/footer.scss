@@ -1,4 +1,12 @@
 .footer {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.footer-menu {
   padding: 50px 0;
   background: $white;
   color: $footer-color;
@@ -12,6 +20,7 @@
       .item {
         list-style-type: none;
         color: $footer-color;
+        margin: .7rem 0;
   
         a {
           color: $footer-color;
@@ -26,4 +35,9 @@
       }
     }
   }  
+}
+
+.footer-copyright {
+  background: $light-blue;
+  color: $dark-blue;
 }
