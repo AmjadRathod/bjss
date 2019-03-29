@@ -1,0 +1,18 @@
+.primary-button {
+  margin-top: 3rem;
+  a {
+    padding: 1rem 3rem;
+    background: $light-blue;
+    border-radius: 25px;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .5s;
+    border: solid 3px $light-blue;
+    
+    &:hover {
+      background: $white;
+      color: $light-blue;
+    }
+  }
+}
