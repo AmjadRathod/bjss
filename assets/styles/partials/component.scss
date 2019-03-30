@@ -16,3 +16,24 @@
     }
   }
 }
+
+.secondary-btn {
+  margin-top: 3rem;
+  
+  a {
+    padding: 1rem 3rem;
+    background: $white;
+    border-radius: 25px;
+    color: $light-blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .5s;
+    border: solid 3px $white;
+    
+    &:hover {
+      background: $dark-blue;
+      color: $white;
+      border-color: $dark-blue;
+    }
+  }
+}
