@@ -1,7 +1,7 @@
 {{- $avatar := resources.Get (.Site.Params.avatar | default "images/logo.png") -}}
 
 <div class="navik-header header-transparent header-shadow viewport-lg sticky" style="margin-top: 0px;">
-  <div class="container">
+  <div class="">
 
     <!-- Navik header -->
     <div class="navik-header-container">
@@ -23,57 +23,231 @@
         <ul>
           <li class=""><a href="#">Expertise<span></span></a>
           </li>
-          <li class="dropdown_menu"><a href="#">Services<span></span></a>
+          <li class="dropdown_menu mega-menu"><a href="#">Services<span></span></a>
             <ul>
-              <li><a href="#">Consulting Services<span></span></a></li>
-              <li><a href="#">Lab Services<span></span></a></li>
-              <li><a href="#">Supply Chain Management<span></span></a></li>
-              <li><a href="#">Deployment Services<span></span></a></li>
-              <li><a href="#">Staffing Services<span></span></a></li>
-              <li><a href="#">Lifecycle Services<span></span></a></li>
-              <li><a href="#">Advanced Technology Center<span></span></a></li>
-              <li><a href="#">Global Integration Centers<span></span></a></li>
+              <li>
+                <div class="mega-menu-container">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <a href="#">Technology Center</a>
+                      <a href="#">Integration Centers</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-services-consulting-3"></i>
+                        Consulting</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-services-lab-3"></i>
+                        Lab</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-services-supplychain-3"></i>
+                        Supply Chain</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-services-deployment-3"></i>
+                        deployment</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-services-staffing-3"></i>
+                        staffing</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-services-lifecycle-3"></i>
+                        lifecycle</a>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
             </ul>
           </li>
-          <li class="dropdown_menu"><a href="#">Solutions<span></span></a>
+          <li class="dropdown_menu mega-menu"><a href="#">Solutions<span></span></a>
             <ul>
-              <li><a href="#">Big Data<span></span></a></li>
-              <li><a href="#">Multicloud<span></span></a></li>
-              <li><a href="#">Collaboration<span></span></a></li>
-              <li><a href="#">Compute<span></span></a></li>
-              <li><a href="#">Internet of Things (IoT)<span></span></a></li>
-              <li><a href="#">Mobility<span></span></a></li>
-              <li><a href="#">Networking<span></span></a></li>
-              <li><a href="#">Security<span></span></a></li>
-              <li><a href="#">Software<span></span></a></li>
-              <li><a href="#">Storage<span></span></a></li>
+              <li>
+                <div class="mega-menu-container">
+                  <div class="row">
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-solutions-bigdata"></i>
+                        bigdata</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-solutions-computecloud"></i>
+                        Multicloud</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-solutions-collaboration"></i>
+                        collaboration</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-solutions-compute"></i>
+                        compute</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <!-- <i class="wwt-icon-solutions-IoT"></i> -->
+                        <i class="wwt-icon-solutions-mobility"></i>
+                        IoT</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-solutions-mobility"></i>
+                        mobility</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-solutions-networking"></i>
+                        networking</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-solutions-security"></i>
+                        security</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-solutions-software"></i>
+                        software</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-solutions-storage"></i>
+                        storage</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </li>
-          <li class="dropdown_menu"><a href="#">Industries<span></span></a>
+          <li class="dropdown_menu mega-menu"><a href="#">Industries<span></span></a>
             <ul>
-              <li><a href="#">Education<span></span></a></li>
-              <li><a href="#">Federal Government<span></span></a></li>
-              <li><a href="#">Financial Services<span></span></a></li>
-              <li><a href="#">Healthcare<span></span></a></li>
-              <li><a href="#">Manufacturing<span></span></a></li>
-              <li><a href="#">Oil & Gas<span></span></a></li>
-              <li><a href="#">Retail<span></span></a></li>
-              <li><a href="#">Service Provider<span></span></a></li>
-              <li><a href="#">State & Local Government<span></span></a></li>
-              <li><a href="#">Utilities<span></span></a></li>
+              <li>
+                <div class="mega-menu-container">
+                  <div class="row">
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-education-3"></i>
+                        education</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-federal-3"></i>
+                        federal Government</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-financial-3"></i>
+                        financial</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-healthcare-3"></i>
+                        healthcare</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-manufacturing-3"></i>
+                        manufacturing</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                          <i class="wwt-icon-industries-oilgas-3"></i>
+                          Oil &amp; Gas</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-retail-3"></i>
+                        retail</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-serviceprovider-3"></i>
+                        service provider</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-govt-3"></i>
+                        state &amp; local Government</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-utilities-3"></i>
+                        utilities</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </li>
           <li><a href="#">Success Stories</a></li>
-          <li class="dropdown_menu"><a href="#">Technologies<span></span></a>
+          <li class="dropdown_menu mega-menu"><a href="#">Technologies<span></span></a>
             <ul>
-              <li><a href="#">Consulting Services<span></span></a></li>
-              <li><a href="#">Lab Services<span></span></a></li>
-              <li><a href="#">Supply Chain Management<span></span></a></li>
-              <li><a href="#">Deployment Services<span></span></a></li>
-              <li><a href="#">Staffing Services<span></span></a></li>
-              <li><a href="#">Lifecycle Services<span></span></a></li>
-              <li><a href="#">Advanced Technology Center<span></span></a></li>
-              <li><a href="#">Global Integration Centers<span></span></a></li>
+              <li>
+                <div class="mega-menu-container">
+                  <div class="row">
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-education-3"></i>
+                        education</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-federal-3"></i>
+                        federal Government</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-financial-3"></i>
+                        financial</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-healthcare-3"></i>
+                        healthcare</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-manufacturing-3"></i>
+                        manufacturing</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                          <i class="wwt-icon-industries-oilgas-3"></i>
+                          Oil &amp; Gas</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-retail-3"></i>
+                        retail</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-serviceprovider-3"></i>
+                        service provider</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-govt-3"></i>
+                        state &amp; local Government</a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="wwt-icon-industries-utilities-3"></i>
+                        utilities</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </li>
           <li><a href="#">Contact Us</a></li>

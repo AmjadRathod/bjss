@@ -2740,3 +2740,35 @@ Media queries for responsive design
 	}
 
 }
+
+.navik-menu ul li {
+	list-style: none;
+}
+
+.navik-menu ul li a {
+	text-transform: uppercase;
+}
+
+.logo {
+	margin-left: 100px;
+}
+
+.navik-menu {
+	margin-right: 100px;
+}
+
+.mega-menu-container {
+
+	a {
+		color: $dark-blue;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+
+		i {
+			font-size: 48px;
+			margin-bottom: 15px;
+			display: block;
+		}
+	}
+}
