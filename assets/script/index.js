@@ -35,3 +35,32 @@ $(".partner-items").slick({
     // instead of a settings object
   ]
 });
+
+$(".related-case-study-carousel").slick({
+  centerMode: true,
+  centerPadding: "100px",
+  slidesToShow: 4,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 1
+      }
+    }
+  ]
+});

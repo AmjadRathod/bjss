@@ -1,0 +1,127 @@
+.page-hero {
+
+  img {
+    height: 70vh;
+    width: 100%;
+  }
+}
+
+section.description {
+  background: $dark-blue;
+
+  .page-menu {
+    padding: 1rem 0;
+    margin: 0 auto;
+    text-align: center;
+
+    .items {
+      list-style: none;
+      display: inline-block;
+      margin: 0 .5rem;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        transition: all .5s;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding: 50px 0;
+  background-color: #eee;
+}
+
+.carousel {
+  padding: 50px 0;
+
+  .title {
+    color: $dark-blue;
+    text-align: center;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+
+    a {
+      color: $light-blue;
+      font-size: 14px;
+    }
+  }
+}
+
+.related-case-study {
+  background: $white;
+}
+
+.carousel-box {
+  
+  a {
+    text-decoration: none;
+
+    &:hover {
+      transition: all .5s;
+      h3 {
+        background: $light-blue;
+      }
+    }
+  }
+
+  img {
+    height: 250px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    
+  }
+  
+  h3 {
+    border-radius: 0 0 5px 5px;
+    transition: all .5s;
+    background: $dark-blue;
+    margin: 0;
+    padding: 1rem;
+    color: $white;
+  }
+}
+
+.related-articles {
+  background: #eee;
+}
+
+.additional-resources {
+  background: $white;
+
+  .box {
+    border: solid 1px $light-blue;
+    padding: 30px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    h3 {
+      color: $light-blue;
+      margin: 0;
+    }
+
+    p {
+      color: $dark-blue;
+    }
+
+    .read-more {
+      text-align: center;
+      background: $light-blue;
+      color: $white;
+      margin-top: 1rem;
+      display: inline-block;
+      border-radius: 10px;
+      padding: 1rem 3rem;
+      transition: all .5s;
+
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+}
