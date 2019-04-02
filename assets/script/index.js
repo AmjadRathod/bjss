@@ -1,4 +1,16 @@
 
+window.onscroll = function () { sticky_header() };
+
+var header = document.getElementById("page-header");
+var sticky = header.offsetTop - 70;
+
+function sticky_header() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky-menu");
+  } else {
+    header.classList.remove("sticky-menu");
+  }
+}
 $(".partner-items").slick({
   infinite: true,
   slidesToShow: 4,
