@@ -37,3 +37,18 @@
     }
   }
 }
+
+.read-more {
+  text-align: center;
+  background: $light-blue;
+  color: $white;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 1rem 3rem;
+  transition: all .5s;
+
+  &:hover {
+    opacity: .9;
+  }
+}
