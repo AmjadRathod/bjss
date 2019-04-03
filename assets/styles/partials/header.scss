@@ -170,7 +170,7 @@ Default settings
 .navik-menu ul li > a {
 	display: block;
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	text-transform: uppercase;
 	color: #212121;
 	padding: 14px 15px;
@@ -2121,7 +2121,7 @@ Media queries for responsive design
 		line-height: 70px;
 	}
 	.navik-header.sticky .logo {
-		padding: 0 40px 0 0;
+		padding: 0 ;
 	}
 	.navik-header.center-menu-1.sticky .logo {
 		padding: 0;
@@ -2750,11 +2750,11 @@ Media queries for responsive design
 }
 
 .logo {
-	margin-left: 100px;
+	margin-left: 60px;
 }
 
 .navik-menu {
-	margin-right: 100px;
+	margin-right: 60px;
 }
 
 .mega-menu-container {
