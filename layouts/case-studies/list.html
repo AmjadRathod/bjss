@@ -13,8 +13,7 @@
 <section class="case-study-list">
   <div class="container">
     <div class="row">
-      {{ $pages := where .Site.Pages "Section" "case-studies" }}
-      {{ range $pages }}
+      {{ range where .Data.Pages "Section" "case-studies" }}
       <div class="col-sm-4">
         <div class="box">
           <a href="{{ .URL }}">
