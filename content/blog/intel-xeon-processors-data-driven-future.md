@@ -1,6 +1,6 @@
 ---
 title: 2ND GENERATION INTEL XEON SCALABLE PROCESSORS POWER A DATA-DRIVEN FUTURE
-author: amjad
+author: Amjad Rathod
 cover: '/assets/images/blog/why-itentials-automation-platform-is-changing-the-game-in-configuration-management.jpg'
 ---
 
