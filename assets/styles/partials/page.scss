@@ -166,14 +166,14 @@ section.description {
   .box {
     height: 320px;
     background: $light-blue;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
   
     .cover {
       
       img {
+        border-radius: 5px 5px 0 0;
         width: 100%;
         height: 250px;
-        border-radius: 5px 5px 0 0;
       }
     }
 
@@ -182,6 +182,10 @@ section.description {
       padding: 0 1rem;
     }
   }
+}
+
+.padding {
+  padding: .5rem 0;
 }
 
 .single-case {
@@ -196,9 +200,21 @@ section.description {
     }
   }
 
+  .author {
+    color: $light-blue;
+    text-transform: capitalize;
+  }
+
   .title {
-    font-size: 72px;
+    font-size: 48px;
     text-transform: uppercase;
     color: $dark-blue;
+  }
+}
+
+.blog-list {
+
+  .box {
+    height: 400px;
   }
 }

@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<section class="case-study">
+  <div class="container">
+    <div class="row">
+      <h1 class="title">
+        Articles
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="case-study-list blog-list">
+  <div class="container">
+    <div class="row justify-content-center">
+      {{ range where .Data.Pages "Section" "blog" }}
+      <div class="col-sm-8 padding">
+        <div class="box">
+          <a href="{{ .URL }}">
+            <div class="cover">
+              <img src="{{.Params.cover}}" alt="">
+            </div>
+            <div class="title">
+              <p>{{.Title}}</p>
+              <p>{{.Params.author}}</p>
+              {{slicestr .Summary 0 200}}
+
+            </div>
+          </a>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+
+</section>
+
+
+{{ end }}
