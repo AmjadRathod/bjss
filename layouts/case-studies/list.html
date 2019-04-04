@@ -14,16 +14,21 @@
   <div class="container">
     <div class="row">
       {{ range where .Data.Pages "Section" "case-studies" }}
-      <div class="col-sm-4">
-        <div class="box">
-          <a href="{{ .URL }}">
-          <div class="cover">
-            <img src="{{.Params.cover}}" alt="">
+      <div class="col-sm-6">
+        <div class="case-box">
+          <div class="row">
+            <div class="col-sm-6 no-padding">
+              <div class="cover">
+                <img src="{{.Params.cover}}" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 no-padding">
+              <div class="title">
+                <p>{{.Title}}</p>
+                <a href="{{.URL}}" class="read-more-btn">read mores</a>
+              </div>
+            </div>
           </div>
-          <div class="title">
-            <p>{{.Title}}</p>
-          </div>
-          </a>
         </div>
       </div>
       {{end}}
