@@ -1,0 +1,28 @@
+.single-content {
+  
+  .single-cover {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.releted-post {
+
+  img {
+    width: 100%;
+    height: 80px;
+
+  }
+
+  a {
+    color: $dark-blue;
+  }
+
+  hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    margin: 1rem ;
+    border-bottom: solid 1px #aaa;
+  }
+}

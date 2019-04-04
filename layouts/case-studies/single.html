@@ -1,16 +1,41 @@
 {{ define "main" }}
 
 <section class="single-case">
-<div class="single-page-cover">
-  <img src="{{.Params.cover}}" alt="">
-</div>
+  <div class="single-page-cover">
+    <img src="{{.Params.cover}}" alt="">
+  </div>
 
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
       <div class="col-8">
         <h1 class="title">{{.Title}}</h1>
-
-        {{ .Content }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="single-content">
+          <img class="single-cover" src="{{.Params.cover}}" alt="{{.Title}}">
+          {{ .Content }}
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="releted-post">
+          <h1>Relevant Case Study</h1>
+          {{ $page := . }}
+          <div class="row">
+            {{ range after 1 (where .Site.Pages "Section" "case-studies") }}
+            <div class="col-4">
+              <a href="{{ $page.Permalink }}">
+                <img src="{{$page.Params.cover}}" alt="">
+              </a>
+            </div>
+            <div class="col-8">
+              <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+            </div>
+            <hr>
+            {{ end }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
