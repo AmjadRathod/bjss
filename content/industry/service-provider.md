@@ -1,5 +1,5 @@
 ---
 layout: page
 title: 'Service Provider'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/bg/service-provider.jpg/
 ---

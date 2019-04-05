@@ -337,113 +337,29 @@
     <div class="row">
       <div class="col-12">
         <h1 class="title">Related industries and services <span><a href="#">view all</a></span></h1>
-      </div>=
+      </div>
     </div>
+    
     <div class="row related-case-study-carousel">
+      {{ range (where .Site.Pages "Section" "services").Reverse }}
+      {{ $pagename := "Services"}}
+      {{ if ne .Title $pagename }}
       <div class="col-sm-3">
         <div class="carousel-box">
-          <a href="#">
+          <a href="{{.URL}}">
             <div class="cover-img">
-              <img src="/assets/images/blog/SDWanHeader-01.jpg"
-                alt="Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...">
+              <img src="{{.Params.cover}}"
+              alt="Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...">
             </div>
             <div class="case-study-footer">
-              <h3>Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...</h3>
+              <h3>{{.Title}}</h3>
             </div>
           </a>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="carousel-box">
-          <a href="#">
-            <div class="cover-img">
-              <img src="/assets/images/blog/SDWanHeader-01.jpg"
-                alt="Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...">
-            </div>
-            <div class="case-study-footer">
-              <h3>Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="carousel-box">
-          <a href="#">
-            <div class="cover-img">
-              <img src="/assets/images/blog/SDWanHeader-01.jpg"
-                alt="Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...">
-            </div>
-            <div class="case-study-footer">
-              <h3>Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="carousel-box">
-          <a href="#">
-            <div class="cover-img">
-              <img src="/assets/images/blog/SDWanHeader-01.jpg"
-                alt="Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...">
-            </div>
-            <div class="case-study-footer">
-              <h3>Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="carousel-box">
-          <a href="#">
-            <div class="cover-img">
-              <img src="/assets/images/blog/SDWanHeader-01.jpg"
-                alt="Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...">
-            </div>
-            <div class="case-study-footer">
-              <h3>Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="carousel-box">
-          <a href="#">
-            <div class="cover-img">
-              <img src="/assets/images/blog/SDWanHeader-01.jpg"
-                alt="Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...">
-            </div>
-            <div class="case-study-footer">
-              <h3>Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="carousel-box">
-          <a href="#">
-            <div class="cover-img">
-              <img src="/assets/images/blog/SDWanHeader-01.jpg"
-                alt="Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...">
-            </div>
-            <div class="case-study-footer">
-              <h3>Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="carousel-box">
-          <a href="#">
-            <div class="cover-img">
-              <img src="/assets/images/blog/SDWanHeader-01.jpg"
-                alt="Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...">
-            </div>
-            <div class="case-study-footer">
-              <h3>Use WWT’s SD-WAN On-Demand Lab Environments to Determine the Right...</h3>
-            </div>
-          </a>
-        </div>
-      </div>
+
+      {{ end }}
+      {{ end }}
     </div>
   </div>
 </section>

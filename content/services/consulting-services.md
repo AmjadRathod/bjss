@@ -1,5 +1,5 @@
 ---
 layout: page
 title: 'Consulting Service'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/bg/consulting.jpg/
 ---
