@@ -172,7 +172,7 @@ Default settings
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #212121;
+	color: $header-link;
 	padding: 14px 15px;
 	text-decoration: none;
 	
@@ -184,7 +184,7 @@ Default settings
 
 .navik-menu ul li.current-menu > a,
 .navik-menu ul li:hover > a {
-	color: $light-blue;
+	color: $header-link-hover;
 	background-color: #f6f6f6;
 }
 
