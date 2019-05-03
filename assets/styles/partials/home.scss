@@ -1,5 +1,6 @@
 .home {
-  
+  padding: 0 0 70px 0;
+
   .hero {
     background: $blue;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
@@ -7,7 +8,7 @@
 
     .home-intro {
       position: relative;
-      height: 80vh;
+      height: 90vh;
 
       .home-intro-box {
         color: $white;
@@ -30,9 +31,23 @@
     .box {
       height: 420px;
       background: $white;
-      border: solid 1px $orange;
+      border: solid 1px $blue;
       border-radius: 5px;
       color: $orange;
+      box-sizing: border-box;
+      transition: all .5s;
+      cursor: pointer;
+      font-weight: 200;
+      line-height: normal;
+
+      &:hover {
+        background: $blue;
+        color: $white;
+
+        .btn-primary-blue {
+          background: $orange;
+        }
+      }
 
       img {
         width: 100%;
