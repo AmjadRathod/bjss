@@ -172,7 +172,7 @@ Default settings
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #212121;
+	color: $header-link-color;
 	padding: 14px 15px;
 	text-decoration: none;
 	
@@ -184,7 +184,7 @@ Default settings
 
 .navik-menu ul li.current-menu > a,
 .navik-menu ul li:hover > a {
-	color: $light-blue;
+	color: $header-hover-link-color;
 	background-color: #f6f6f6;
 }
 
@@ -2115,6 +2115,7 @@ Media queries for responsive design
 	}
 	.navik-header.sticky .navik-header-container {
 		height: 70px;
+		background-color: $header-bg;
 	}
 	.navik-header.sticky .navik-menu > ul > li > a {
 		height: 70px;
