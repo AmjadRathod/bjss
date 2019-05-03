@@ -9,12 +9,15 @@
     .home-intro {
       position: relative;
       height: 90vh;
-
+      text-align: center;
+      
       .home-intro-box {
         color: $white;
         position: absolute;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
+        text-align: center;
+        
       }
     }
   }
