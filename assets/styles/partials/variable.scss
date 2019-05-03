@@ -1,10 +1,10 @@
-$blue: #0F2B9A;
+$blue: #210E76;
 $pink: #F54EA2;
 $orange: #FF794D;
 $black: #000;
 $gray: #e2e2e2;
 
-$light-blue:#3926d3;
+$light-blue:#3444B3;
 $dark-blue: #010b2d;
 $white: #fff;
 $orange: #F80103;
@@ -12,10 +12,24 @@ $orange: #F80103;
 
 $footer-color: $dark-blue;
 
+// header
+$header-bg: $blue;
+$header-link-color: $white;
+$header-hover-link-color: $pink;
+
 // Button
 $primary-btn-bg: $orange;
 $primary-btn-hover-bg: $pink;
 $primary-btn-color: $white;
+
 $secondary-btn-bg: $pink;
 $secondary-btn-hover-bg: $orange;
 $secondary-btn-color: $white;
+
+$btn-primary-blue-bg: $blue;
+$btn-primary-blue-color: $white;
+$btn-primary-blue-hover-bg: $light-blue;
+
+$btn-primary-orange-bg: $orange;
+$btn-primary-orange-color: $white;
+$btn-primary-orange-hover-bg: $light-blue;

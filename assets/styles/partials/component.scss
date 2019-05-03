@@ -1,6 +1,6 @@
-.btn-primary {
-  background: $primary-btn-bg;
-  color: $primary-btn-color;
+.btn-primary-orange {
+  background: $btn-primary-orange-bg;
+  color: $btn-primary-orange-color;
   padding: 1rem 3rem;
   border-radius: 5px;
   margin-top: 3rem;
@@ -9,7 +9,7 @@
   text-transform: uppercase;
   
   &:hover {
-    background: $primary-btn-hover-bg;
+    background: $btn-primary-orange-hover-bg;
   }
 }
 
@@ -28,8 +28,26 @@
   }
 }
 
+.btn-primary-blue {
+  background: $btn-primary-blue-bg;
+  color: $btn-primary-blue-color;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  margin-top: 3rem;
+  display: inline-block;
+  transition: all .5s;
+  text-transform: uppercase;
+  font-family: 'Roboto-mono';
+  
+  &:hover {
+    background: $btn-primary-blue-hover-bg;
+  }
+}
+
 .p-title {
   text-transform: capitalize;
-  color: $pink;
+  color: $black;
+  font-weight: normal;
+  font-size: 2.5rem;
   text-align: center;
 }
