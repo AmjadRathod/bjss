@@ -2,7 +2,7 @@
   padding: 0 0 70px 0;
 
   .hero {
-    background: $blue;
+    background: $light-blue;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
 
@@ -41,7 +41,7 @@
       line-height: normal;
 
       &:hover {
-        background: $blue;
+        background: $light-blue;
         color: $white;
 
         .btn-primary-blue {
