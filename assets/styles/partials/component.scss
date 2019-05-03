@@ -1,55 +1,35 @@
-.primary-button {
-  margin-top: 3rem;
-  a {
-    padding: 1rem 3rem;
-    background: $light-blue;
-    border-radius: 25px;
-    color: $white;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all .5s;
-    border: solid 3px $light-blue;
-    
-    &:hover {
-      background: $white;
-      color: $light-blue;
-    }
-  }
-}
-
-.secondary-btn {
-  margin-top: 3rem;
-  
-  a {
-    padding: 1rem 3rem;
-    background: $white;
-    border-radius: 25px;
-    color: $light-blue;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all .5s;
-    border: solid 3px $white;
-    
-    &:hover {
-      background: $dark-blue;
-      color: $white;
-      border-color: $dark-blue;
-    }
-  }
-}
-
-.read-more {
-  text-align: center;
-  background: $light-blue;
-  color: $white;
-  margin-top: 1rem;
-  display: inline-block;
-  border-radius: 100px;
+.btn-primary {
+  background: $primary-btn-bg;
+  color: $primary-btn-color;
   padding: 1rem 3rem;
-  text-transform: capitalize;
+  border-radius: 5px;
+  margin-top: 3rem;
+  display: inline-block;
   transition: all .5s;
-
+  text-transform: uppercase;
+  
   &:hover {
-    opacity: .9;
+    background: $primary-btn-hover-bg;
   }
+}
+
+.btn-secondary {
+  background: $secondary-btn-bg;
+  color: $secondary-btn-color;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  margin-top: 3rem;
+  display: inline-block;
+  transition: all .5s;
+  text-transform: uppercase;
+  
+  &:hover {
+    background: $secondary-btn-hover-bg;
+  }
+}
+
+.p-title {
+  text-transform: capitalize;
+  color: $pink;
+  text-align: center;
 }
