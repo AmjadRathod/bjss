@@ -133,21 +133,24 @@
 
   }
 
-  .event-box {
-
-    height: 300px;
-    background: $white;
-
-    &.text-box {
-      padding: 1rem 2rem;
-      text-align: left;
-      color: $orange;
+  .events {
+    -webkit-clip-path: polygon(0 10%,100% 0%,100% 90%,0 100%);
+    clip-path: polygon(0 10%,100% 0%,100% 90%,0 100%);
+   
+    .event-box {  
+      height: 300px;
+      background: $white;
+      
+      &.text-box {
+        padding: 1rem 2rem;
+        text-align: left;
+        color: $orange;
+      }
+      
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-
   }
 }
