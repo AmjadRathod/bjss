@@ -175,4 +175,20 @@
       }
     }
   }
+  .footer-contact {
+    -webkit-clip-path: polygon(0 15%,100% 0%,100% 100%,0 100%);
+    clip-path: polygon(0 15%,100% 0%,100% 100%,0 100%);
+    background: $blue;
+
+    .contact-title {
+      font-size: 48px;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $white;
+      
+    }
+  }
 }
