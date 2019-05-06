@@ -1,5 +1,4 @@
 ---
-layout: page
 title: 'Big Data'
 cover: /assets/images/big-data/big-data-cover.jpg/
 ---
