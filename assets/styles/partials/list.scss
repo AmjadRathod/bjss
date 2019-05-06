@@ -1,0 +1,23 @@
+.introduction {
+  padding-top: 70px;
+  text-align: center;
+  background: $light-blue;
+
+  .home-intro {
+    position: relative;
+    height: 45vh;
+
+    .home-intro-box {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%);
+
+      h1 {
+        text-align: center;
+        color: $white;
+        font-size: 48px;
+      }
+    }
+  }
+}
