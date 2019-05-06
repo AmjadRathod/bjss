@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+  once: true
+});
 
 $(".partner-items").slick({
   infinite: true,
