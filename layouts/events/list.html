@@ -1,0 +1,71 @@
+{{ define "main" }}
+<main class="blog">
+
+  <section class="introduction">
+    <div class="container">
+      <div class="row justify-content-sm-center">
+        <div class="col-sm-8">
+          <div class="home-intro">
+            <div class="home-intro-box">
+              <h1 data-aos="fade-up" data-aos-duration="3000">Our Events</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="home">
+
+    <section class="home-primary-section events">
+      <div class="container">
+        <div class="row justify-content-sm-center">
+          <div class="col-sm-10">
+            {{ range $k, $v := where .Data.Pages "Section" "events" }}
+              {{ if mod $k 2 | eq 0 }}
+              <div class="row">
+                <div class="col-sm-5 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
+                  <div class="event-box">
+                    <img src="{{.Params.cover}}" alt="">
+                  </div>
+                </div>
+                <div class="col-sm-7 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
+                  <div class="event-box text-box">
+                    <h2>{{.Title}}</h2>
+                    <p></p>
+                    <a class="btn-primary-blue" data-aos="zoom-in" data-aos-duration="2000" href="{{.URL}}">
+                      Read more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {{else}}
+              <div class="row">
+            
+                <div class="col-sm-7 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
+                  <div class="event-box text-box">
+                    <h2>{{.Title}}</h2>
+                    <p></p>
+                    <a class="btn-primary-blue" data-aos="zoom-in" data-aos-duration="2000" href="{{.URL}}">
+                      Read more
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-5 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
+                  <div class="event-box">
+                    <img src="{{.Params.cover}}" alt="">
+                  </div>
+                </div>
+              </div>
+          
+              {{ end }}
+
+            {{end}}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+{{ end }}
