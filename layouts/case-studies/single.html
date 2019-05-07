@@ -23,16 +23,19 @@
           <h1>Relevant Case Study</h1>
           {{ $page := . }}
           <div class="row">
-            {{ range after 1 (where .Site.Pages "Section" "case-studies") }}
+            {{ range first 4 (where .Site.Pages "Section" "case-studies").Reverse }}
+            {{ $pagename := "Case-studies"}}
+            {{ if ne .Title $pagename }}
             <div class="col-4">
-              <a href="{{ $page.Permalink }}">
-                <img src="{{$page.Params.cover}}" alt="">
+              <a href="{{ .Permalink }}">
+                <img src="{{.Params.cover}}" alt="">
               </a>
             </div>
             <div class="col-8">
-              <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
             </div>
             <hr>
+            {{ end }}
             {{ end }}
           </div>
         </div>
@@ -43,5 +46,3 @@
 
 
 {{ end }}
-
-<img src="/static/assets/images/bg/oil-gas.jpg" alt="">
