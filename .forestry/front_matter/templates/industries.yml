@@ -1,0 +1,10 @@
+---
+label: Industries
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: file
+  name: cover
+  label: cover
