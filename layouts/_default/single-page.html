@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<section class="single-case">
+  <div class="single-page-cover">
+    <img src="{{.Params.cover}}" alt="">
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <h1 class="title">{{.Title}}</h1>
+        <!-- <p class="author"><i class="fas fa-user"></i> {{.Params.author}}</p> -->
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="related-case-study">
+  <div class="container">
+    <div class="row">
+      <h1>Related Case Studies</h1>
+    </div>
+
+    <div class="row">
+      {{ range where .Site.Pages "Section" "services" }}
+      <div class="col-sm-4" data-aos="fade-up" data-aos-duration="2000">
+        <div class="box">
+          <article>
+            <header>
+              <div class="cover">
+                <img src="/assets/images/big-data/big-data-cover.jpg" alt="">
+              </div>
+            </header>
+            <footer>
+              <h3>{{.Title}}</h3>
+              <a class="btn-primary-blue" href="{{.URL}}" data-aos="zoom-in" data-aos-duration="3000">
+                Read more
+              </a>
+            </footer>
+          </article>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{ end }}
