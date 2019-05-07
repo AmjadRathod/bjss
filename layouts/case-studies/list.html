@@ -16,50 +16,31 @@
   </section>
   <div class="home">
 
-    <section class="home-primary-section events">
+    <section class="home-primary-section articles">
       <div class="container">
         <div class="row justify-content-sm-center">
           <div class="col-sm-10">
-            {{ range $k, $v := where .Data.Pages "Section" "case-studies" }}
-              {{ if mod $k 2 | eq 0 }}
-              <div class="row">
-                <div class="col-sm-5 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
-                  <div class="event-box">
-                    <img src="{{.Params.cover}}" alt="">
-                  </div>
-                </div>
-                <div class="col-sm-7 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
-                  <div class="event-box text-box">
-                    <h2>{{.Title}}</h2>
-                    <p></p>
-                    <a class="btn-primary-blue" data-aos="zoom-in" data-aos-duration="2000" href="{{.URL}}">
-                      Read more
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {{else}}
-              <div class="row">
-            
-                <div class="col-sm-7 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
-                  <div class="event-box text-box">
-                    <h2>{{.Title}}</h2>
-                    <p></p>
-                    <a class="btn-primary-blue" data-aos="zoom-in" data-aos-duration="2000" href="{{.URL}}">
-                      Read more
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-5 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
-                  <div class="event-box">
-                    <img src="{{.Params.cover}}" alt="">
-                  </div>
+            <div class="row">
+              {{ range where .Data.Pages "Section" "case-studies" }}
+              <div class="col-sm-4 mt-5" data-aos="fade-up" data-aos-duration="2000">
+                <div class="box">
+                  <article>
+                    <header>
+                      <div class="cover">
+                        <img src="/assets/images/big-data/big-data-cover.jpg" alt="">
+                      </div>
+                    </header>
+                    <footer>
+                      <h3>{{.Title}}</h3>
+                      <a class="btn-primary-blue" href="{{.URL}}" data-aos="zoom-in" data-aos-duration="3000">
+                        Read more
+                      </a>
+                    </footer>
+                  </article>
                 </div>
               </div>
-          
-              {{ end }}
-
-            {{end}}
+              {{end }}
+            </div>
           </div>
         </div>
       </div>
