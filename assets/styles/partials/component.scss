@@ -6,9 +6,9 @@
   margin-top: 3rem;
   display: inline-block;
   text-transform: uppercase;
+  transition: all .5s!important;
   
   &:hover {
-    transition: all .5s!important;
     background: $btn-primary-orange-hover-bg;
   }
 }
