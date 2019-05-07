@@ -1,0 +1,65 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: "/admin"
+webhook_url: 
+sections:
+- type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
+  path: content/induestries
+  label: Induestries
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/solution
+  label: Solution
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/technology
+  label: Technology
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/blog
+  label: Blog
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/services
+  label: Services
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/events
+  label: Events
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/case-studies
+  label: Case studies
+  create: all
+  match: "**/*"
+upload_dir: static/assets/uploads
+public_path: "/assets/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
+  publish_command: hugo -d public
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.55.2
+  publish_env:
+  - HUGO_ENV=production
+  - HUGO_VERSION=0.55.2
+  preview_output_directory: public
+  output_directory: public
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
+version: 0.55.2
