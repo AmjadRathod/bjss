@@ -89,3 +89,19 @@
     
   }
 }
+  .footer-contact {
+    background: $blue;
+    padding: 4rem 0;
+    text-align: center;
+
+    .contact-title {
+      font-size: 48px;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $white;
+      
+    }
+  }
