@@ -8,3 +8,11 @@ fields:
 - type: file
   name: cover
   label: cover
+- name: categories
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Categories
+  description: 'Name of the categories goes here (for example: big-data, IOT)'
