@@ -4,7 +4,9 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Industries Title
+  description: Page Title goes here
 - type: file
   name: cover
-  label: cover
+  label: cover image
+  description: Cover Image goes here
