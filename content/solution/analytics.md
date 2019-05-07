@@ -1,5 +1,5 @@
 ---
-title: 'Compute'
+title: 'Analytics'
 cover: /assets/images/big-data/big-data-cover.jpg/
 ---
 
