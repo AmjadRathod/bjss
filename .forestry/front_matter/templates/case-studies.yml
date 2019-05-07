@@ -1,0 +1,10 @@
+---
+label: Case Studies
+hide_body: false
+fields:
+- type: textarea
+  name: title
+  label: title
+- type: file
+  name: cover
+  label: cover
