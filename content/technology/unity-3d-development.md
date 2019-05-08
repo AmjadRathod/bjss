@@ -1,5 +1,5 @@
 ---
-title: International Innovation Center
+title: International Innovation Centre
 cover: "/assets/images/bg/iic.jpg/"
 
 ---
