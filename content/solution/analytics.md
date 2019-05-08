@@ -1,6 +1,6 @@
 ---
 title: 'Analytics'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/solution/analytics.jpg/
 ---
 
 

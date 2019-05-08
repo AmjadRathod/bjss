@@ -1,6 +1,6 @@
 ---
 title: 'Collaboration'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/solution/collaboration.jpg/
 ---
 
 Teams can communicate without barriers across departments, organisations and technologies. 
