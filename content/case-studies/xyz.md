@@ -1,10 +1,9 @@
 ---
-title: People, process, and technology improvements help $8B auto manufacturer decrease forecasting planning time by 45%
-cover: '/assets/images/blog/why-itentials-automation-platform-is-changing-the-game-in-configuration-management.jpg'
+title: Technology Enablement for People, process, and technology improvements helps
+  save £18M  in Finacial services organisation decreasing cost by 48% Annually
+cover: "/assets/images/blog/why-itentials-automation-platform-is-changing-the-game-in-configuration-management.jpg"
+
 ---
-
-
-
 ## Business Challenge
 
 *   **People Not Optimally Engaged** – Severely depleted Finance organization, little-to-no institutional knowledge/experience with core planning processes, resources lacked end-to-end business value chain perspectives
@@ -29,4 +28,3 @@ cover: '/assets/images/blog/why-itentials-automation-platform-is-changing-the-ga
 *   **Enabling technology adoption, sustainability, cost reduction**
     *   Planning & reporting applications reflect real-world business model & operations
     *   Significant maintenance cost reduction through improved alignment & simplification
-
