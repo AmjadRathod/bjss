@@ -31,7 +31,7 @@
                 <div class="col-sm-7 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
                   <div class="event-box text-box">
                     <h2>{{.Title}}</h2>
-                    <p></p>
+                    <p class="list-info">{{ slicestr .RawContent 0 80 }}...</p>
                     <a class="btn-primary-blue" data-aos="zoom-in" data-aos-duration="2000" href="{{.URL}}">
                       Read more
                     </a>
@@ -44,7 +44,7 @@
                 <div class="col-sm-7 no-padding mt-5" data-aos="fade-up" data-aos-duration="2000">
                   <div class="event-box text-box">
                     <h2>{{.Title}}</h2>
-                    <p></p>
+                    <p class="list-info">{{ slicestr .RawContent 0 80 }}...</p>
                     <a class="btn-primary-blue" data-aos="zoom-in" data-aos-duration="2000" href="{{.URL}}">
                       Read more
                     </a>
