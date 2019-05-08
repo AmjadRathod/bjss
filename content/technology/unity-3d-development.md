@@ -1,4 +1,5 @@
 ---
-title: 'Advanced Technology Center'
-cover: /assets/images/bg/atc.jpg/
+title: International Innovation Center
+cover: "/assets/images/bg/iic.jpg/"
+
 ---
