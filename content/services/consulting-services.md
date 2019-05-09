@@ -1,6 +1,6 @@
 ---
 title: Consulting Service
-cover: "/assets/images/bg/consulting.jpg/"
+cover: "/assets/images/services/consulting.jpg/"
 
 ---
 Our Management Consultants, Solutions Architects, Engineers, Business Analysts, User Researchers and Software Developers work across a broad range of technologies and across the entire delivery lifecycle to meet strategic objectives, align business goals and increase your organisation return on investments.

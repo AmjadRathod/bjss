@@ -1,6 +1,6 @@
 ---
 title: 'Lifecycle services'
-cover: /assets/images/bg/lifecycle-services.jpg/
+cover: /assets/images/services/lifecycle.jpg/
 ---
 
 Wemanage and support your IT assets through their entire lifecycle. From a feasibility assessments, procurement and logistics through to delivery, deployment, decommissioning and recovery.

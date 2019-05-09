@@ -1,6 +1,6 @@
 ---
 title: 'Innovation Lab & Testing Services'
-cover: /assets/images/bg/lab.jpg/
+cover: /assets/images/services/lab.jpg/
 ---
 
 Through our dedicated Innovation Lab and Testing centre we provide a clean and advanced testing environment along with test services to quality assure instances during key decision-making milestones and Provision of Usability Testing Capability for Digital Transformation.

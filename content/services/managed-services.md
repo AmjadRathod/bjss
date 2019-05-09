@@ -1,6 +1,6 @@
 ---
 title: 'Managed Services'
-cover: /assets/images/bg/atc.jpg/
+cover: /assets/images/services/managed.jpg/
 ---
 
 Our Strong partnerships with third party vendors and global OEM’s ensure that speed in procurement of software as well any hardware dramatically reduces product lead time and increases predictability for our customers.  

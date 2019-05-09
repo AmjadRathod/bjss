@@ -1,6 +1,6 @@
 ---
 title: 'Recruitments & StaffingServices'
-cover: /assets/images/bg/staffing.jpg/
+cover: /assets/images/services/staffing.jpg/
 ---
 
 Employees(People) remain firmly the key resource for any organisation and as such we provide staffing from a strategic perspective, covering what will add value to your workforce now and for the future. 

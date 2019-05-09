@@ -1,4 +1,4 @@
 ---
 title: 'State Local Government'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/industries/gove.jpg/
 ---

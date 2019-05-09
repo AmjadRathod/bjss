@@ -1,6 +1,6 @@
 ---
 title: 'Utilities'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/industries/utility.jpg/
 ---
 
 Our International Integration Technology Centre provides our customers with a hands-on environment to design and test solutions for common challenges facing the utilities industry.

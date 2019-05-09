@@ -1,5 +1,5 @@
 ---
 title: 'Supply Chain Services'
-cover: /assets/images/big-data/supply-chain-services.jpg/
+cover: /assets/images/services/supply-chain-services.jpg/
 draft: true
 ---
