@@ -1,0 +1,58 @@
+.career {
+  
+  .main {
+    padding-top: 70px;
+  }
+}
+
+.page-intro {
+  height: 50vh;
+  background: $blue;
+
+  h1 {
+    color: $white;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  h3 {
+    color: $white;
+    font-size: 26px;
+    line-height: 1.5;
+    font-weight: 200;
+    text-align: center;
+  }
+
+}
+
+.job {
+  background: $white;
+  padding: 3rem;
+  .job-box {
+    height: 260px;
+    width: 100%;
+    background: $gray;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+
+    header {
+      position: relative;
+
+      h2 {
+        font-size: 26px;
+        flood-color: $pink;
+      }
+
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      a {
+        margin: 0;
+      }
+    }
+  }
+}
