@@ -1,6 +1,6 @@
 ---
 title: Government Services
-cover: "/assets/images/industries/gove-service.png/"
+cover: "/assets/images/industries/gove-service.jpg/"
 
 ---
 Complex technologies compose the underlying fabric of every organisation. And mission success has never been more dependent upon these systems.
