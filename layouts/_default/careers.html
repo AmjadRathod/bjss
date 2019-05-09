@@ -17,18 +17,24 @@
   <section class="job">
     <div class="container">
       <div class="row">
+        {{ range (where .Site.Pages "Section" "job") }}
+        {{ $pagename := "Jobs"}}
+        {{ if ne .Title $pagename }}
+
         <div class="col-sm-4">
           <div class="job-box">
             <header>
-              <h2>Developer</h2>
+              <h2>{{.Title}}</h2>
             </header>
             <footer>
-              <a class="btn-primary-orange" href="#" data-aos="fade-up" data-aos-duration="3000">
+              <a class="btn-primary-orange" href="{{.URL}}" data-aos="fade-up" data-aos-duration="3000">
                 Apply Now
               </a>
             </footer>
           </div>
         </div>
+        {{end}}
+        {{end}}
       </div>
     </div>
   </section>

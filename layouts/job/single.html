@@ -1,14 +1,23 @@
 {{ define "main" }}
 
-<section class="single-case">
-  <div class="single-page-cover">
-    <img src="{{.Params.cover}}" alt="">
-  </div>
+<section class="main page-intro" style="padding-top: 80px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>WORK WITH US</h1>
 
+        <h3>We’ve combined a variety of special skills to create the world’s first integrated, end-to-end mobility
+          company.
+          Mobility isn’t just part of what we do, it’s why we exist – to reinvent business through mobility.</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="single-case">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8">
-        <h1 class="title">{{.Title}}</h1>
+        <h1 class="title">Job Position {{.Title}}</h1>
         <div class="page-content">
           {{ .Content }}
         </div>
