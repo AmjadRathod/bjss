@@ -9,8 +9,9 @@
     <div class="row justify-content-center">
       <div class="col-8">
         <h1 class="title">{{.Title}}</h1>
-        <!-- <p class="author"><i class="fas fa-user"></i> {{.Params.author}}</p> -->
-        {{ .Content }}
+        <div class="page-content">
+          {{ .Content }}
+        </div>
       </div>
     </div>
   </div>
@@ -30,11 +31,11 @@
           <article>
             <header>
               <div class="cover">
-                <img src="/assets/images/big-data/big-data-cover.jpg" alt="">
+                <img src="{{.Params.cover}}" alt="{{.Title}}">
               </div>
             </header>
             <footer>
-              <h3>{{.Title}}</h3>
+              <h3>{{ slicestr .Title 0 80 }}...</h3>
               <a class="btn-primary-blue" href="{{.URL}}" data-aos="zoom-in" data-aos-duration="3000">
                 Read more
               </a>
@@ -44,7 +45,7 @@
       </div>
       {{end}}
       {{end}}
-      
+
     </div>
     <div class="row justify-content-sm-center">
       <dic class="col-sm-12">
@@ -68,11 +69,11 @@
           <article>
             <header>
               <div class="cover">
-                <img src="/assets/images/big-data/big-data-cover.jpg" alt="">
+                <img src="{{.Params.cover}}" alt="{{.Title}}">
               </div>
             </header>
             <footer>
-              <h3>{{.Title}}</h3>
+              <h3>{{ slicestr .Title 0 60 }}...</h3>
               <a class="btn-primary-blue" href="{{.URL}}" data-aos="zoom-in" data-aos-duration="3000">
                 Read more
               </a>
@@ -82,7 +83,7 @@
       </div>
       {{end}}
       {{end}}
-      
+
     </div>
     <div class="row justify-content-sm-center">
       <dic class="col-sm-12">
@@ -98,7 +99,7 @@
     </div>
 
     <div class="row">
-      {{ range (where .Site.Pages "Section" "induestries").Reverse }}
+      {{ range (where .Site.Pages "Section" "industries").Reverse }}
       {{ $pagename := "Industries"}}
       {{ if ne .Title $pagename }}
       <div class="col-sm-4 mt-5" data-aos="fade-up" data-aos-duration="2000">
@@ -106,7 +107,7 @@
           <article>
             <header>
               <div class="cover">
-                <img src="/assets/images/big-data/big-data-cover.jpg" alt="">
+                <img src="{{.Params.cover}}" alt="{{.Title}}">
               </div>
             </header>
             <footer>
@@ -128,7 +129,7 @@
           <article>
             <header>
               <div class="cover">
-                <img src="/assets/images/big-data/big-data-cover.jpg" alt="">
+                <img src="{{.Params.cover}}" alt="{{.Title}}">
               </div>
             </header>
             <footer>
@@ -142,10 +143,10 @@
       </div>
       {{end}}
       {{end}}
-      
+
     </div>
   </div>
 </section>
-  {{ partial "footer-contact" . }}
+{{ partial "footer-contact" . }}
 
 {{ end }}
