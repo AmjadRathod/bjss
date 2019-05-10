@@ -1,6 +1,6 @@
 ---
 title: 'Security'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/solution/security.jpg/
 ---
 
 Every day online threats grow more complex, as do the technologies to combat them. With another major security breach in the news each week, it is more important than ever that advanced security measures are built into every aspect of an organisation’s IT infrastructure. We help our customers protect their reputations, business assets and intellectual property by accelerating the maturity of their security posture.

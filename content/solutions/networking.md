@@ -1,6 +1,6 @@
 ---
 title: 'Networking'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/solution/networking.jpg/
 ---
 
 Making more and better connections. The Internet of Things, **software-defined networking (SDN) and software-defined WAN (SD-WAN)** are driving a new level of connectivity and changing how you manage your network.

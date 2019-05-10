@@ -1,6 +1,6 @@
 ---
 title: 'Cloud Readiness'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/solution/cloud.png/
 ---
 
 Being Cloud ready allows an organisation to gain a competitive advantage by reducing the time to market and enabling a digital strategy. 

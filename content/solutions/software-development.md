@@ -1,6 +1,6 @@
 ---
 title: 'Software Development'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/solution/software-development.png/
 ---
 
 We build software through ongoing iteration in close collaboration with our customers to ensure an agile process and project success. 

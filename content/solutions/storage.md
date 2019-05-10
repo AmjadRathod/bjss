@@ -1,6 +1,6 @@
 ---
 title: 'Storage'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/solution/storage.jpg/
 ---
 
 With traditional storage and backup resources stretching to their limits, it’s time to revaluate your storage solutions.

@@ -1,6 +1,6 @@
 ---
 title: 'Internet of Things (IoT)'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/solution/iot.png/
 ---
 
 The Internet of Things (IoT) is a disrupting business processes and reshaping industries. Software and analytics on the other hand is driving change across all industries providing insight from the integration of devices and sensors. 

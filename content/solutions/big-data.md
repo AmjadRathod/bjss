@@ -1,6 +1,6 @@
 ---
 title: 'Big Data'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/expertise/big-data-cover.jpg/
 ---
 
 With the deluge of data from mobility making the right investments in data management and Business Intelligence is crucial to your business. 

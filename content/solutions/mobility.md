@@ -1,6 +1,6 @@
 ---
 title: 'Mobility'
-cover: /assets/images/big-data/big-data-cover.jpg/
+cover: /assets/images/solution/mobility.jpg/
 ---
 
 Creating end-to-end mobile solutions. A variety of devices are required to stay productive and customers expect to connect digitally with your brand at any time. 
