@@ -10,15 +10,16 @@
       // height: 50px;
       padding: 0 1rem;
       border-radius: 5px;
-      border: solid 1px $pink;
+      border: solid 1px $light-blue;
       margin-top: 1.5rem;
+      transition: all .5s;
 
       &:focus {
         outline: none;
       }
 
       &:hover {
-        border-color: $blue;
+        border-color: $pink;
       }
 
     }
