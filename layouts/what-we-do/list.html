@@ -1,0 +1,40 @@
+{{ define "main" }}
+---
+title: 'Enterprise Application Services'
+---
+<main class="what-we-do">
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <h1>WHAT WE DO</h1>
+          <h4>Built to help enterprises reinvent themselves for the connected world, we offer a unique blend of capabilities and a
+          fresh mindset designed to fuel innovation.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="offer section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title"><span>Our </span>offerings</h1>
+        </div>
+      </div>
+      <div class="row">
+      {{ range where .Data.Pages "Section" "what-we-do" }}
+        <div class="col-sm-3 mt-5">
+          <div class="list-box">
+            <p>icon</p>
+            <h4>{{.Title}}</h4>
+            <a href="{{.URL}}">Read More</a>
+          </div>
+        </div>
+      {{ end}}
+      </div>
+    </div>
+  </section>
+  {{partial "footer-contact" . }}
+
+</main>
+{{ end }}
