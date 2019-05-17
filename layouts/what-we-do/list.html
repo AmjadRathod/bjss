@@ -1,7 +1,5 @@
 {{ define "main" }}
----
-title: 'Enterprise Application Services'
----
+
 <main class="what-we-do">
   <section class="hero">
     <div class="container">
@@ -14,7 +12,7 @@ title: 'Enterprise Application Services'
       </div>
     </div>
   </section>
-  <section class="offer section">
+  <section class="offer section list-section">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -25,7 +23,7 @@ title: 'Enterprise Application Services'
       {{ range where .Data.Pages "Section" "what-we-do" }}
         <div class="col-sm-3 mt-5">
           <div class="list-box">
-            <p>icon</p>
+            <img src="/assets/icons/AI-ideation-and-strategy.svg" alt="">
             <h4>{{.Title}}</h4>
             <a href="{{.URL}}">Read More</a>
           </div>

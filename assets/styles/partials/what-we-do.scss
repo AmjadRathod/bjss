@@ -1,7 +1,10 @@
 .what-we-do {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 72px;
   background: $gray;
+
+  .section {
+    padding-bottom: 3rem;
+  }
 
   .hero {
     height: 60vh;
@@ -45,6 +48,10 @@
     padding: 1rem 2rem;
     color: $l-black;  
 
+    img {
+      width: 130px;
+    }
+
     h1 {
       font-size: 25px;
       color: $orange;
@@ -76,7 +83,26 @@
     width: 100%;
     text-align: center;
     padding: 1rem 0;
+    color: $l-black !important;
     background: $white;
+    border-radius: 5px;
+
+    a {
+      color: $orange;
+      transition: all .5s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    img {
+      height: 70px;
+    }
+  }
+
+  .list-section {
+    padding: 2rem 0 4rem 0;
   }
 }
 
