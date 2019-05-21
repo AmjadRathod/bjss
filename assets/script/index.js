@@ -67,3 +67,21 @@ $(".related-case-study-carousel").slick({
     }
   ]
 });
+
+$('.toggle').click(function (e) {
+  e.preventDefault();
+
+  var $this = $(this);
+
+  if ($this.next().hasClass('showw')) {
+    $this.next().removeClass('showw');
+    $this.next().slideUp(350);
+  } else {
+    $this.parent().parent().find('li .inner').removeClass('showw');
+    $this.next().toggleClass('showw');
+    var txt = $this.parent().find('.inner p').html();
+    console.log(txt);
+    $this.parent().parent().parent().find('.text').html(txt);
+    
+  }
+});

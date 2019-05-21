@@ -1,0 +1,63 @@
+.training-list {
+
+  .btn {
+    display: inline-block;
+  }
+
+  .content {
+
+  }
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.accordion {
+  display: inline-block;
+}
+
+.tarining-title {
+  height: 100px;
+  width: 100%;
+  background: red;
+}
+
+.text {
+  padding: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  
+    .inner {
+        padding-left: 1em;
+        overflow: hidden;
+        display: none;
+      
+        &.show {
+          /*display: block;*/
+        }
+    }
+  
+    li {
+        margin: .5em 0;
+      
+        a.toggle {
+            width: 100%;
+            display: block;
+            background: rgba(0,0,0,0.78);
+            color: #fefefe;
+            padding: .75em;
+            border-radius: 0.15em;
+            transition: background .3s ease;
+          
+            &:hover {
+                background: rgba(0, 0, 0, 0.9);
+            }
+        }
+    }
+}

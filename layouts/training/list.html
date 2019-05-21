@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<main class="what-we-do">
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <h1>WHAT WE DO</h1>
+          <h4>Built to help enterprises reinvent themselves for the connected world, we offer a unique blend of
+            capabilities and a
+            fresh mindset designed to fuel innovation.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="training-list">
+    <div class="container">
+      <div class="row">
+        {{ range $key, $taxonomy := .Site.Taxonomies.job }}
+        <div class="col-sm-3">
+          <div class="tarining-title">
+            {{ $key }}
+          </div>
+        </div>
+        <div class="col-sm-9">   
+        {{ $.Scratch.Set "counter" 0 }}
+        {{ range $taxonomy.Pages }}
+          <ul class="accordion">
+            <li>
+              <a class="toggle btn-list" href="javascript:void(0);">{{ .LinkTitle }}</a>
+              <ul class="inner">
+                <p>{{.Params.description}}</p>
+              </ul>
+            </li>
+          </ul>
+        {{ end }}
+        {{ range $taxonomy.Pages }}
+        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+        {{$index := $.Scratch.Get "counter"}}
+          <div class="text">{{if eq $.Scratch 1}}amjad{{end}}</div>
+        {{end}}
+        </div>
+        {{ end }}
+      </div>
+      <!--  -->
+      
+
+      <!--  -->
+    </div>
+
+
+  </section>
+
+  {{partial "footer-contact" . }}
+
+</main>
+{{ end }}

@@ -91,11 +91,21 @@ Default settings
 .navik-header .logo {
 	text-align: center;
 	padding: 30px 40px;
+
+	@media (max-width: 1000px) {
+		text-align: left;
+		padding: 20px 0;
+		margin-left: 20px;	
+	}
 }
 
 .navik-header .logo img {
 	max-width: 100%;
 	height: auto;
+	width: 190px!important;
+	@media (max-width: 1000px) {
+		width: 190px;	
+	}
 }
 
 .burger-menu {
@@ -2130,7 +2140,11 @@ Media queries for responsive design
 	}
 	.navik-header.sticky .logo img {
 		max-height: 70px;
-		max-width: 190px;
+		width: 190px;
+
+		@media (max-width: 1000px) {
+			width: 150px;	
+		}
 	}
 	@-webkit-keyframes stickyTransition {
 		from {

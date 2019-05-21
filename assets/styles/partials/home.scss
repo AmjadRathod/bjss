@@ -1,3 +1,5 @@
+
+
 .home {
   padding: 0 0 0 0;
 
@@ -6,11 +8,18 @@
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
 
+    @media (max-width: 767px) {
+      clip-path: unset;
+    }
+
     .home-intro {
       position: relative;
       height: 90vh;
       text-align: center;
-      
+
+        @media (max-width: 767px) {
+          height: 80vh;
+        } 
       .home-intro-box {
         color: $white;
         position: absolute;
@@ -18,6 +27,9 @@
         transform: translateY(-50%);
         text-align: center;
         
+        @media (max-width: 767px) {
+          top: 50%;
+        } 
       }
     }
   }
@@ -29,7 +41,12 @@
     text-align: center;    
     -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
-
+    
+    @media (max-width: 767px) {
+      clip-path: unset;
+      margin-top: 0;
+      padding-top: 0;
+    }
 
     .box {
       height: 420px;
@@ -78,7 +95,13 @@
     text-align: center;    
     -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
-
+    
+    @media (max-width: 767px) {
+      clip-path: unset;
+      padding-top: 0;
+      margin: 0;
+    }
+    
     .p-title {
       color: $white;
     }
@@ -152,7 +175,13 @@
   .events {
     -webkit-clip-path: polygon(0 06%,100% 0%,100% 94%,0 100%);
     clip-path: polygon(0 10%,100% 0%,100% 90%,0 100%);
-   
+  
+    @media (max-width: 767px) {
+    clip-path: unset;
+    padding-top: 0;
+    margin: 0;
+    }
+  
     .event-box {  
       height: 300px;
       background: $white;
@@ -195,6 +224,12 @@
     -webkit-clip-path: polygon(0 15%,100% 0%,100% 100%,0 100%);
     clip-path: polygon(0 15%,100% 0%,100% 100%,0 100%);
     background: $blue;
+
+    @media (max-width: 767px) {
+      clip-path: unset;
+      margin: 0;
+      padding-top: 0;
+    }
 
     .contact-title {
       font-size: 48px;
